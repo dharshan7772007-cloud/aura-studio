@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+
+  --color-aura-ivory: #F5F0E8;
+  --color-aura-beige: #D8C8B5;
+  --color-aura-sand: #D8C8B5;
+  --color-aura-gold: #C5A477;
+  --color-aura-gold-dark: #A98759;
+  --color-aura-bronze: #947653;
+  --color-aura-brown: #302820;
+  --color-aura-espresso: #302820;
+  --color-aura-brown-light: #4A3E33;
+  --color-aura-muted: #7A6D60;
+  --color-aura-paper: #FDFBF8;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-aura-ivory);
+  color: var(--color-aura-brown);
+  letter-spacing: -0.01em;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Luxury Material Classes */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(216, 200, 181, 0.45);
+}
+
+.glass-panel-dark {
+  background: rgba(48, 40, 32, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(197, 164, 119, 0.25);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #302820 0%, #947653 50%, #C5A477 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-shimmer-border {
+  position: relative;
+}
+.gold-shimmer-border::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1px solid #C5A477;
+  opacity: 0.35;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.gold-shimmer-border:hover::after {
+  opacity: 0.8;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F0E8;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8C8B5;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A477;
+}

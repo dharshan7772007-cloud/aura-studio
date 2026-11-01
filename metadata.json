@@ -1,0 +1,6 @@
+{
+  "name": "AURA Studio — Premium Beauty & Wellness Booking",
+  "description": "Your moment. Your ritual. Your glow. Book personalized luxury skincare, hair, and wellness rituals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
